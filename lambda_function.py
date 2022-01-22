@@ -8,8 +8,8 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 # Parent Bucket Details
-master_buckets={'catapult':['rocade-capital-prod-landing-zone'],'sling':['rocade-capital-prod-unredacted-zone','rocade-capital-prod-staging-zone'],'keep':['rocade-capital-prod-redacted-zone']}
-backup_buckets={'catapult':['rocade-capital-prod-landing-zone-backup'],'sling':['rocade-capital-prod-unredacted-zone-backup','rocade-capital-prod-staging-zone-backup'],'keep':['rocade-capital-prod-redacted-zone-backup']}
+master_buckets={'dev':['dev-bucket'],'staging':['staging-bucket-one','staging-bucket-two'],'uat':['uat-bucket']}
+backup_buckets={'dev':['dev-bucket-backup'],'staging':['staging-bucket-one-backup','staging-bucket-two-backup'],'uat':['uat-bucket-backup']}
 
 # Environment Variables
 prefix = os.environ["PREFIX"]
